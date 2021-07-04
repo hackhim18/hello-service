@@ -2,7 +2,7 @@ import React from 'react'
 import styled from 'styled-components';
 import TopSectionBackgroundImg from "../../images/landing-page.jpg"
 import bestimg from "../../images/Work only with the best.png";
-
+import { BrandLogo } from '../../components/brandLogo';
 
 const TopSectionContainer = styled.div`
   width: 100%;
@@ -40,6 +40,10 @@ font-size:24px;
 color:#fff;
 line-height:1.7;
 `;
+const LogoContainer = styled.div`
+display:flex;
+flex-direction:column;
+`;
  
 
 
@@ -47,12 +51,17 @@ line-height:1.7;
 export function TopSection(props) {
     return  <TopSectionContainer>
         <BackgroundFilter>
+          <TopSectionInnerContainer> 
+            <LogoContainer>
+                <BrandLogo />
+            </LogoContainer>
             <Title>
-                Hello-Service
+            
             </Title>
          <StandoutImage>
              <img src={bestimg}  alt="best in the field"/>
          </StandoutImage>
+         </TopSectionInnerContainer>  
         </BackgroundFilter>
     </TopSectionContainer>
 }
