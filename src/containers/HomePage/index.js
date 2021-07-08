@@ -5,7 +5,8 @@ import { TopSection } from "./topSection"
 
 export function HomePage(props) {
     return <PageContainer> 
-     <TopSection/> 
-     <Navbar />
+     <TopSection> 
+     <Navbar /></TopSection> 
+ 
     </PageContainer>
 }
