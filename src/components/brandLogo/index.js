@@ -39,7 +39,7 @@ export function BrandLogo(props) {
             <img src={LogoImg} alt="Servycing logo" />
           </LogoImage>
        
-      )}
+      )} 
      
         <LogoTitle size={textSize} color={color}>
           Hello-Service
